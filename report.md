@@ -1,7 +1,9 @@
-Generated shakespeare char samples
+# Generated shakespeare char samples
+
 Clown:
 So it is a purpose but
 back.
+
 AUFIDIUS:
 Sirrah, you have
 heard him foul and tell him him at, and him he
@@ -13,6 +15,11 @@ tribunes of all one wound that it seems it, so far
 you deny to our weak. Here cannot ruin for the great lament
 purse of the fiery death? here's such a bed inchards.
 
+POLIXENES:
+How now! as it not remember
+To five y
+
+## Plots saved in figures/ and report validation loss
 n_layer = 7
 n_head = 2
 step 5000: train loss 0.6197, val loss 1.7125
@@ -28,4 +35,11 @@ step 5000: train loss 0.4428, val loss 1.8812
 n_layer = 7
 n_head = 7
 step 5000: train loss 0.3880, val loss 1.9469
+
+![Model loss](loss_vs_heads.png)
+
+## best settings
+n_layer = 7
+n_head = 2
+train loss 0.6197, val loss 1.7125
 
