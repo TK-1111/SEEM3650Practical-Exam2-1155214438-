@@ -45,7 +45,43 @@ n_head = 2
 train loss 0.6197, val loss 1.7125
 
 ## data inside data/code generation/input.txt
+please refer to input.txt
 
+## new configuration
+```sh
+out_dir = 'out-code-generation'
+eval_interval = 250
+eval_iters = 200
+log_interval = 10
+
+always_save_checkpoint = False
+
+wandb_log = False
+wandb_project = 'code-generation'
+wandb_run_name = 'code-gpt-laptop'
+
+dataset = 'code_generation'
+gradient_accumulation_steps = 1
+batch_size = 48  
+block_size = 384 
+
+n_layer = 6 
+n_head = 6   
+n_embd = 384 
+dropout = 0.1  
+
+learning_rate = 5e-4
+max_iters = 5000 
+lr_decay_iters = 5000
+min_lr = 5e-5
+beta2 = 0.99
+
+warmup_iters = 150
+
+
+device = 'cuda'
+compile = False
+```
 ## generated code samples
 ---------------
 assert(kind == PyUnicode_1BYTE_KIND);
