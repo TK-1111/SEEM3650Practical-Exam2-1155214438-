@@ -43,3 +43,4 @@ n_layer = 7
 n_head = 2
 train loss 0.6197, val loss 1.7125
 
+## data inside data/code generation/input.txt
